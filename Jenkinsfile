@@ -1,7 +1,7 @@
 pipeline {
     environment {
         registry = "mackay4/jenkinscalculator"
-        registryCredential = 'dockerhub'
+        registryCredentials = 'dockerhub'
         dockerImage = ''
     }
     agent any
@@ -58,7 +58,7 @@ pipeline {
         stage ('Delpoy Image') {
             steps {
                 script {
-                    docker.withRegistry('', registryCredential) {
+                    docker.withRegistry('', registryCredentials) {
                         dockerImage.push()
                     }
                 }
