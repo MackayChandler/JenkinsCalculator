@@ -2,7 +2,7 @@ import java.util.UUID;
 import java.lang.Math;
 
 class Calculator {
-
+    //SimpleChange
     Calculator(){
 
     }
@@ -40,11 +40,11 @@ class Calculator {
     .
     etc
      */
-    int fibonacciNumberFinder(int n){
-        if (n <= 1) {
-            return n;
+    int fibonacciNumberFinder(int b){
+        if (b <= 1) {
+            return b;
         }
-        return fibonacciNumberFinder(n-1) + fibonacciNumberFinder(n-2);
+        return fibonacciNumberFinder(b-1) + fibonacciNumberFinder(b-2);
     }
 
 
